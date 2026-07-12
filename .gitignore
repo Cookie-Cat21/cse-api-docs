@@ -1,0 +1,6 @@
+# Local ignore for probe caches if needed
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
