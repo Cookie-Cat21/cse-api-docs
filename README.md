@@ -59,6 +59,51 @@ python smoke.py
 
 Thin wrappers only (`market_status`, `company_info`, `trade_summary`, …). Same ethics as the docs.
 
+## Endpoints (37, live-probed weekly)
+
+Full request/response shapes, curl examples, and samples: **<https://cookie-cat21.github.io/cse-api-docs/>**. Source of truth: [`catalog/endpoints.yaml`](catalog/endpoints.yaml).
+
+**Prices**
+- `POST /companyInfoSummery` — per-symbol quote (primary single-name source)
+- `POST /tradeSummary` — bulk board, best poller source (all symbols in one call)
+- `POST /detailedTrades` — market-wide detailed trades board
+- `POST /orderBook` — order-book totals + live bid/ask levels for one symbol
+- `POST /todaySharePrice` — short list (~top N), not a full board
+
+**Market**
+- `POST /marketStatus` — open/closed status for session gating
+- `POST /marketSummery` — session aggregates
+- `POST /dailyMarketSummery` — end-of-day market aggregates history
+- `POST /allSectors` — sector index rows
+
+**Indices**
+- `POST /aspiData` — All Share Price Index snapshot
+- `POST /snpData` — S&P Sri Lanka 20 snapshot
+
+**Leaderboards**
+- `POST /topGainers` / `POST /topLooses` / `POST /mostActiveTrades` — also mirrored over WebSocket
+
+**Charts**
+- `POST /companyChartDataByStock` — per-stock intraday ticks (use `reqSymbolInfo.id` as `stockId`)
+- `POST /chartData` — index-scale series only; `symbol=` is ignored
+- `POST /daysTrade` — day trade tape for one symbol
+
+**Company**
+- `POST /companyProfile` — directors, business summary, logo, contacts
+- `POST /financials` — per-symbol annual/quarterly/other report archive + `reqFinancial` statement-line array
+
+**Disclosures**
+- `POST /approvedAnnouncement`, `POST /getAnnouncementByCompany` (preferred per-symbol), `POST /announcements` (legacy)
+- `POST /getFinancialAnnouncement`, `POST /getNonComplianceAnnouncements`, `POST /getNewListingsRelatedNoticesAnnouncements`, `POST /getBuyInBoardAnnouncements`
+- `POST /circularAnnouncement`, `POST /directiveAnnouncement`, `POST /getCOVIDAnnouncements`
+- `POST /getGeneralAnnouncementById`, `POST /getAnnouncementById` — detail by id, often 204
+
+**Meta / media**
+- `GET /corporateAnnouncementCategory`, `GET /smd/categories`, `GET /notifications`
+- `GET /news/web`, `GET /events`, `GET /events/top`
+
+**WebSocket (STOMP over SockJS at `/api/ws`)** — mirrors `aspi`, `snp`, `status`, `summary`, `today-sharePrice`, `top-gainers`, `top-looses`, `most-active-trades`, `daytrade`. See [`docs/WEBSOCKET.md`](docs/WEBSOCKET.md) / the hosted site for topics and request destinations.
+
 ## CI
 
 - [`probe.yml`](.github/workflows/probe.yml) — weekly (Mon 06:00 UTC) + on push: live-probes every endpoint, uploads the report.
