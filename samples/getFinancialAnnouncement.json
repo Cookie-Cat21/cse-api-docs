@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/getFinancialAnnouncement",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:14.421953+00:00",
+    "verified_at": "2026-07-16T16:34:39.293257+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [
@@ -14,6 +14,83 @@
   },
   "response": {
     "reqFinancialAnnouncemnets": [
+      {
+        "id": 52027,
+        "path": "cmt/upload_report_file/1068_1784195778737.pdf",
+        "manualDate": 1782757800000,
+        "uploadedDate": "16 Jul 2026 03:26:18 PM",
+        "fileText": "Interim Financial Statements for the Quarter ended 30th June 2026",
+        "name": "ASSOCIATED MOTOR FINANCE COMPANY PLC",
+        "symbol": "AMF",
+        "logoUrl": "upload_logo/1068_1311838497.jpeg",
+        "authorizedDate": "16 Jul 2026 03:58:32 PM"
+      },
+      {
+        "id": 52024,
+        "path": "cmt/upload_report_file/379_1784195933058.06.2026.pdf",
+        "manualDate": 1782757800000,
+        "uploadedDate": "16 Jul 2026 03:28:53 PM",
+        "fileText": "Interim Financial Statements for the Quarter ended 30th June 2026",
+        "name": "L B FINANCE PLC",
+        "symbol": "LFIN",
+        "logoUrl": "upload_logo/379_1601610854.jpeg",
+        "authorizedDate": "16 Jul 2026 03:51:58 PM"
+      },
+      {
+        "id": 52019,
+        "path": "cmt/upload_report_file/3479_1784171573367.pdf",
+        "manualDate": 1782757800000,
+        "uploadedDate": "16 Jul 2026 08:42:53 AM",
+        "fileText": "Interim Financial Statements for the Quarter ended 30th June 2026",
+        "name": "WEALTHTRUST SECURITIES PLC",
+        "symbol": "WLTH",
+        "logoUrl": "upload_logo/6JlwF7SSHFQHvh2x_16Apr2026045013GMT_1776315013298.png",
+        "authorizedDate": "16 Jul 2026 08:50:02 AM"
+      },
+      {
+        "id": 52015,
+        "path": "cmt/upload_report_file/3479_1784115525552.pdf",
+        "manualDate": 1774895400000,
+        "uploadedDate": "15 Jul 2026 05:08:45 PM",
+        "fileText": "Annual Report as at 31st March 2026",
+        "name": "WEALTHTRUST SECURITIES PLC",
+        "symbol": "WLTH",
+        "logoUrl": "upload_logo/6JlwF7SSHFQHvh2x_16Apr2026045013GMT_1776315013298.png",
+        "authorizedDate": "15 Jul 2026 08:08:14 PM"
+      },
+      {
+        "id": 52013,
+        "path": "cmt/upload_report_file/489_1784052647709.pdf",
+        "manualDate": 1774895400000,
+        "uploadedDate": "14 Jul 2026 11:40:47 PM",
+        "fileText": "Annual Report as at 31st March 2026",
+        "name": "DILMAH CEYLON TEA COMPANY PLC",
+        "symbol": "CTEA",
+        "logoUrl": "upload_logo/489_1601452595.jpeg",
+        "authorizedDate": "15 Jul 2026 08:14:50 AM"
+      },
+      {
+        "id": 52011,
+        "path": "cmt/upload_report_file/685_1783959485501.pdf",
+        "manualDate": 1774895400000,
+        "uploadedDate": "13 Jul 2026 09:48:05 PM",
+        "fileText": "Annual Report as at 31st March 2026",
+        "name": "SIERRA CABLES PLC",
+        "symbol": "SIRA",
+        "logoUrl": "upload_logo/685_1601637927.jpeg",
+        "authorizedDate": "14 Jul 2026 08:18:01 AM"
+      },
+      {
+        "id": 52009,
+        "path": "cmt/upload_report_file/2512_1783934020990.pdf",
+        "manualDate": 1774895400000,
+        "uploadedDate": "13 Jul 2026 02:43:40 PM",
+        "fileText": "Annual Report as at 31st March 2026",
+        "name": "LANKA CREDIT AND BUSINESS FINANCE PLC",
+        "symbol": "LCBF",
+        "logoUrl": "upload_logo/2512_1637033956.jpeg",
+        "authorizedDate": "13 Jul 2026 04:13:59 PM"
+      },
       {
         "id": 52007,
         "path": "cmt/upload_report_file/863_1783652788017.26 Softlogic Finance PLC.pdf",
@@ -57,50 +134,6 @@
         "symbol": "NTB",
         "logoUrl": "upload_logo/387_1216701989.gif",
         "authorizedDate": "09 Jul 2026 05:00:33 PM"
-      },
-      {
-        "id": 51996,
-        "path": "cmt/upload_report_file/688_1783505383015.pdf",
-        "manualDate": 1774895400000,
-        "uploadedDate": "08 Jul 2026 03:39:43 PM",
-        "fileText": "Annual Report as at 31st March 2026",
-        "name": "TOKYO CEMENT COMPANY (LANKA) PLC",
-        "symbol": "TKYO",
-        "logoUrl": "upload_logo/688_1601611429.jpeg",
-        "authorizedDate": "08 Jul 2026 05:11:47 PM"
-      },
-      {
-        "id": 51995,
-        "path": "cmt/upload_report_file/1302_1783504660368.pdf",
-        "manualDate": 1774895400000,
-        "uploadedDate": "08 Jul 2026 03:27:40 PM",
-        "fileText": "Annual Report as at 31st March 2026",
-        "name": "ABANS PLC",
-        "symbol": "ABNS",
-        "logoUrl": "upload_logo/1302_1601464418.jpeg",
-        "authorizedDate": "08 Jul 2026 04:59:37 PM"
-      },
-      {
-        "id": 51992,
-        "path": "cmt/upload_report_file/458_1783341943255.pdf",
-        "manualDate": 1774895400000,
-        "uploadedDate": "06 Jul 2026 06:15:43 PM",
-        "fileText": "Annual Report as at 31st March 2026",
-        "name": "CEYLON BEVERAGE HOLDINGS PLC",
-        "symbol": "BREW",
-        "logoUrl": "upload_logo/bM7G579aV6bWSW5j_8Jul2026050307GMT_1783486987761.png",
-        "authorizedDate": "06 Jul 2026 06:51:36 PM"
-      },
-      {
-        "id": 51991,
-        "path": "cmt/upload_report_file/485_1783341509328.pdf",
-        "manualDate": 1774895400000,
-        "uploadedDate": "06 Jul 2026 06:08:29 PM",
-        "fileText": "Annual Report as at 31st March 2026",
-        "name": "LION BREWERY CEYLON PLC",
-        "symbol": "LION",
-        "logoUrl": "upload_logo/h86lOvFReO03p0OK_13Mar2026060110GMT_1773381670392.png",
-        "authorizedDate": "06 Jul 2026 06:48:16 PM"
       }
     ]
   }

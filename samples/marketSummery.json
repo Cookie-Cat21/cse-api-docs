@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/marketSummery",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:06.945302+00:00",
+    "verified_at": "2026-07-16T16:34:30.998373+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [
@@ -17,10 +17,10 @@
     }
   },
   "response": {
-    "id": 36842130,
-    "tradeVolume": 2032722428.75,
-    "shareVolume": 65380636,
-    "tradeDate": 1783675100747,
-    "trades": 16168
+    "id": 36865407,
+    "tradeVolume": 1486150002.75,
+    "shareVolume": 43278766,
+    "tradeDate": 1784193492268,
+    "trades": 13502
   }
 }

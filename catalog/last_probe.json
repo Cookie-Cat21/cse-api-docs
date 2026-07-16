@@ -1,11 +1,11 @@
 {
-  "probed_at": "2026-07-12T05:58:21.871989+00:00",
+  "probed_at": "2026-07-16T16:34:46.772979+00:00",
   "base_url": "https://www.cse.lk/api",
   "symbol": "JKH.N0000",
   "stock_id": "297",
   "failed": 0,
-  "passed": 35,
-  "total": 35,
+  "passed": 37,
+  "total": 37,
   "results": [
     {
       "id": "companyInfoSummery",
@@ -188,6 +188,23 @@
       "sample": "samples/detailedTrades.json"
     },
     {
+      "id": "orderBook",
+      "path": "/orderBook",
+      "method": "POST",
+      "category": "prices",
+      "summary": "Public order-book totals + live bid/ask levels for one symbol.",
+      "status": 200,
+      "ok": true,
+      "fingerprint": {
+        "type": "object",
+        "keys": [
+          "reqOrderBook",
+          "reqOrderBookTotal"
+        ]
+      },
+      "sample": "samples/orderBook.json"
+    },
+    {
       "id": "todaySharePrice",
       "path": "/todaySharePrice",
       "method": "POST",
@@ -310,7 +327,7 @@
       "ok": true,
       "fingerprint": {
         "type": "array",
-        "len": 299,
+        "len": 297,
         "item_keys": [
           "d",
           "pc",
@@ -329,7 +346,7 @@
       "ok": true,
       "fingerprint": {
         "type": "array",
-        "len": 297,
+        "len": 319,
         "item_keys": [
           "change",
           "changePercentage",
@@ -563,6 +580,27 @@
         ]
       },
       "sample": "samples/companyProfile.json"
+    },
+    {
+      "id": "financials",
+      "path": "/financials",
+      "method": "POST",
+      "category": "company",
+      "summary": "Per-symbol financial report archive \u2014 annual/quarterly/other report PDFs plus a flat reqFinancial statement-line array (secId/elmId/data).",
+      "status": 200,
+      "ok": true,
+      "fingerprint": {
+        "type": "object",
+        "keys": [
+          "infoAnnualData",
+          "infoCompanyBannerAd",
+          "infoOtherData",
+          "infoQuarterlyData",
+          "infoWebLink",
+          "reqFinancial"
+        ]
+      },
+      "sample": "samples/financials.json"
     },
     {
       "id": "corporateAnnouncementCategory",

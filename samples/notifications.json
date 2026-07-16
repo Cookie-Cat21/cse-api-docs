@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/notifications",
     "method": "GET",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:20.061601+00:00",
+    "verified_at": "2026-07-16T16:34:45.058560+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [

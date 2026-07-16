@@ -1,0 +1,34 @@
+{
+  "_probe": {
+    "id": "financials",
+    "url": "https://www.cse.lk/api/financials",
+    "method": "POST",
+    "status": 200,
+    "verified_at": "2026-07-16T16:34:43.728886+00:00",
+    "fingerprint": {
+      "type": "object",
+      "keys": [
+        "infoAnnualData",
+        "infoCompanyBannerAd",
+        "infoOtherData",
+        "infoQuarterlyData",
+        "infoWebLink",
+        "reqFinancial"
+      ]
+    }
+  },
+  "response": {
+    "_truncated": true,
+    "_note": "payload exceeded 12000 bytes; keys only",
+    "keys": [
+      "infoAnnualData",
+      "infoQuarterlyData",
+      "infoWebLink",
+      "infoOtherData",
+      "reqFinancial",
+      "infoCompanyBannerAd",
+      "_truncated"
+    ],
+    "preview": "{\"infoAnnualData\": [{\"id\": 51321, \"path\": \"cmt/upload_report_file/508_1779789508055.pdf\", \"manualDate\": 1779733800000, \"uploadedDate\": 1779789508055, \"fileText\": \"Annual Report as at 31st March 2026\", \"path2\": null, \"authorizedDate\": 1779794879336}, {\"id\": 47951, \"path\": \"cmt/upload_report_file/508_1748344127576.pdf\", \"manualDate\": 1743359400000, \"uploadedDate\": 1748344127576, \"fileText\": \"Annual Report 2024/25\", \"path2\": \"cmt/upload_report_file/508_1748344127576.\", \"authorizedDate\": null}, {\"id\": 45624, \"path\": \"cmt/upload_report_file/508_1716290978705.pdf\", \"manualDate\": 1716229800000, \"uploadedDate\": 1716290978705, \"fileText\": \"Annual Report 2023/24\", \"path2\": \"cmt/upload_report_file/508_1716290978705.\", \"authorizedDate\": null}, {\"id\": 43171, \"path\": \"cmt/upload_report_file/508_1684842640428.pdf\", \"manualDate\": 1684780200000, \"uploadedDate\": 1684842640428, \"fileText\": \"Annual Report 2022/23\", \"path2\": \"cmt/upload_report_file/508_1684842640428.\", \"authorizedDate\": null}, {\"id\": 40501, \"path\": \"cmt/upload_report_file/508_1653300092463.pdf\", \"manualDate\": 1653244200000, \"uploadedDate\": 1653300092463, \"fileText\": \"Annual Report 2021/22\", \"path2\": \"cmt/upload_report_file/508_1653300092463.\", \"authorizedDate\": null}, {\"id\": 37890, \"path\": \"cmt/upload_report_file/508_1621849083921.pdf\", \"manualDate\": 1617129000000, \"uploadedDate\": 1621849083921, \"fileText\": \"Annual Report 2020/21\", \"path2\": null, \"authorizedDate\": null}, {\"id\": 35361, \"path\": \"cmt/upload_report_file/508_1590052852777.pdf\", \"manualDate\": 1585593000000, \"uploadedDate\": 1590052852777, \"fileText\": \"Annual Report 2019/2020\", \"path2\": null, \"authorizedDate\": null}, {\"id\": 32957, \"path\": \"upload_report_file/508_1558691698729.pdf\", \"manualDate\": 1558636200000, \"uploadedDate\": 1558636200000, \"fileText\": \"Annual Report as at 31st March 2019\", \"path2\": null, \"authorizedDate\": null}, {\"id\": 23448, \"path\": \"upload_report_file/508_1527672093254.pdf\", \"manualDate\": 1527618600000, \"uploadedDate\": 1527618600000, \"fileTe"
+  }
+}

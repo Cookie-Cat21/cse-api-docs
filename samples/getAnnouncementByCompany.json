@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/getAnnouncementByCompany",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:13.517326+00:00",
+    "verified_at": "2026-07-16T16:34:38.003082+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [

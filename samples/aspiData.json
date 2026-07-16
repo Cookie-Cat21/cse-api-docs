@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/aspiData",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:08.241193+00:00",
+    "verified_at": "2026-07-16T16:34:32.317445+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [
@@ -20,13 +20,13 @@
     }
   },
   "response": {
-    "id": 36847851,
-    "value": 21765.56,
-    "lowValue": 21697.72,
-    "highValue": 21803.67,
-    "change": 67.84,
-    "percentage": 0.31265957897880514,
+    "id": 36869864,
+    "value": 21447.57,
+    "lowValue": 21417.8,
+    "highValue": 21504.63,
+    "change": 29.77,
+    "percentage": 0.13899653559189085,
     "sectorId": 1.0,
-    "timestamp": 1783675100747
+    "timestamp": 1784193492268
   }
 }

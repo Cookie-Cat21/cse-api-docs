@@ -82,17 +82,17 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
 </nav>
 <main>
 <h1>Probe report</h1>
-<p><strong>When:</strong> <code>2026-07-12T05:58:21.871989+00:00</code>  </p>
+<p><strong>When:</strong> <code>2026-07-16T16:34:46.772979+00:00</code>  </p>
 <p><strong>Base:</strong> <code>https://www.cse.lk/api</code>  </p>
 <p><strong>Symbol:</strong> <code>JKH.N0000</code> stockId=<code>297</code>  </p>
-<p><strong>Result:</strong> 35/35 passed (0 failed)</p><div class='card'><pre>{
-  &quot;probed_at&quot;: &quot;2026-07-12T05:58:21.871989+00:00&quot;,
+<p><strong>Result:</strong> 37/37 passed (0 failed)</p><div class='card'><pre>{
+  &quot;probed_at&quot;: &quot;2026-07-16T16:34:46.772979+00:00&quot;,
   &quot;base_url&quot;: &quot;https://www.cse.lk/api&quot;,
   &quot;symbol&quot;: &quot;JKH.N0000&quot;,
   &quot;stock_id&quot;: &quot;297&quot;,
   &quot;failed&quot;: 0,
-  &quot;passed&quot;: 35,
-  &quot;total&quot;: 35,
+  &quot;passed&quot;: 37,
+  &quot;total&quot;: 37,
   &quot;results&quot;: [
     {
       &quot;id&quot;: &quot;companyInfoSummery&quot;,
@@ -275,6 +275,23 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
       &quot;sample&quot;: &quot;samples/detailedTrades.json&quot;
     },
     {
+      &quot;id&quot;: &quot;orderBook&quot;,
+      &quot;path&quot;: &quot;/orderBook&quot;,
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;category&quot;: &quot;prices&quot;,
+      &quot;summary&quot;: &quot;Public order-book totals + live bid/ask levels for one symbol.&quot;,
+      &quot;status&quot;: 200,
+      &quot;ok&quot;: true,
+      &quot;fingerprint&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keys&quot;: [
+          &quot;reqOrderBook&quot;,
+          &quot;reqOrderBookTotal&quot;
+        ]
+      },
+      &quot;sample&quot;: &quot;samples/orderBook.json&quot;
+    },
+    {
       &quot;id&quot;: &quot;todaySharePrice&quot;,
       &quot;path&quot;: &quot;/todaySharePrice&quot;,
       &quot;method&quot;: &quot;POST&quot;,
@@ -397,7 +414,7 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
       &quot;ok&quot;: true,
       &quot;fingerprint&quot;: {
         &quot;type&quot;: &quot;array&quot;,
-        &quot;len&quot;: 299,
+        &quot;len&quot;: 297,
         &quot;item_keys&quot;: [
           &quot;d&quot;,
           &quot;pc&quot;,
@@ -416,7 +433,7 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
       &quot;ok&quot;: true,
       &quot;fingerprint&quot;: {
         &quot;type&quot;: &quot;array&quot;,
-        &quot;len&quot;: 297,
+        &quot;len&quot;: 319,
         &quot;item_keys&quot;: [
           &quot;change&quot;,
           &quot;changePercentage&quot;,
@@ -652,6 +669,27 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
       &quot;sample&quot;: &quot;samples/companyProfile.json&quot;
     },
     {
+      &quot;id&quot;: &quot;financials&quot;,
+      &quot;path&quot;: &quot;/financials&quot;,
+      &quot;method&quot;: &quot;POST&quot;,
+      &quot;category&quot;: &quot;company&quot;,
+      &quot;summary&quot;: &quot;Per-symbol financial report archive \u2014 annual/quarterly/other report PDFs plus a flat reqFinancial statement-line array (secId/elmId/data).&quot;,
+      &quot;status&quot;: 200,
+      &quot;ok&quot;: true,
+      &quot;fingerprint&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;keys&quot;: [
+          &quot;infoAnnualData&quot;,
+          &quot;infoCompanyBannerAd&quot;,
+          &quot;infoOtherData&quot;,
+          &quot;infoQuarterlyData&quot;,
+          &quot;infoWebLink&quot;,
+          &quot;reqFinancial&quot;
+        ]
+      },
+      &quot;sample&quot;: &quot;samples/financials.json&quot;
+    },
+    {
       &quot;id&quot;: &quot;corporateAnnouncementCategory&quot;,
       &quot;path&quot;: &quot;/corporateAnnouncementCategory&quot;,
       &quot;method&quot;: &quot;GET&quot;,
@@ -810,7 +848,7 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
 </main>
 <footer>
   MIT-licensed harness · Not financial advice · <a href="./ethics.html">Ethics</a> ·
-  Generated 2026-07-12 05:59 UTC
+  Generated 2026-07-16 16:35 UTC
 </footer>
 </body>
 </html>

@@ -1,9 +1,9 @@
 # Probe report
 
-**When:** `2026-07-12T05:58:21.871989+00:00`  
+**When:** `2026-07-16T16:34:46.772979+00:00`  
 **Base:** `https://www.cse.lk/api`  
 **Symbol:** `JKH.N0000` stockId=`297`  
-**Result:** 35/35 passed (0 failed)
+**Result:** 37/37 passed (0 failed)
 
 | ID | Method | Path | Status | OK |
 |---|---|---|---|---|
@@ -16,6 +16,7 @@
 | `aspiData` | POST | `/aspiData` | 200 | ✅ |
 | `snpData` | POST | `/snpData` | 200 | ✅ |
 | `detailedTrades` | POST | `/detailedTrades` | 200 | ✅ |
+| `orderBook` | POST | `/orderBook` | 200 | ✅ |
 | `todaySharePrice` | POST | `/todaySharePrice` | 200 | ✅ |
 | `topGainers` | POST | `/topGainers` | 200 | ✅ |
 | `topLooses` | POST | `/topLooses` | 200 | ✅ |
@@ -36,6 +37,7 @@
 | `getGeneralAnnouncementById` | POST | `/getGeneralAnnouncementById` | 200 | ✅ |
 | `getAnnouncementById` | POST | `/getAnnouncementById` | 204 | ✅ |
 | `companyProfile` | POST | `/companyProfile` | 200 | ✅ |
+| `financials` | POST | `/financials` | 200 | ✅ |
 | `corporateAnnouncementCategory` | GET | `/corporateAnnouncementCategory` | 200 | ✅ |
 | `smd_categories` | GET | `/smd/categories` | 200 | ✅ |
 | `notifications` | GET | `/notifications` | 200 | ✅ |

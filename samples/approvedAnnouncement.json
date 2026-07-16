@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/approvedAnnouncement",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:13.078667+00:00",
+    "verified_at": "2026-07-16T16:34:37.560747+00:00",
     "fingerprint": {
       "type": "object",
       "keys": [
@@ -15,12 +15,12 @@
   "response": {
     "approvedAnnouncements": [
       {
-        "id": 31842,
-        "createdDate": 1783683888000,
-        "dateOfAnnouncement": "10 Jul 2026",
-        "announcementId": 38004,
-        "announcementCategory": "CORPORATE DISCLOSURE",
-        "company": "TESS AGRO PLC",
+        "id": 31883,
+        "createdDate": 1784219258000,
+        "dateOfAnnouncement": "16 Jul 2026",
+        "announcementId": 38063,
+        "announcementCategory": "DEBENTURE ISSUE(OVERSUBSCRIBED)",
+        "company": "COMMERCIAL BANK OF CEYLON PLC",
         "type": null,
         "symbol": null,
         "recordDate": null,
@@ -33,16 +33,16 @@
         "paymentDate": null,
         "agmDate": null,
         "dateOfAgmInitial": null,
-        "logoUrl": "upload_logo/781_1601463701.jpeg",
-        "remarks": "Changes to the Nomination and Governance, Remuneration and Audit Committee."
+        "logoUrl": "upload_logo/328m7MwB2CexSgiJ_3Jan2024051241GMT_1704258761020.jpeg",
+        "remarks": null
       },
       {
-        "id": 31841,
-        "createdDate": 1783683711000,
-        "dateOfAnnouncement": "10 Jul 2026",
-        "announcementId": 38009,
-        "announcementCategory": "CORPORATE DISCLOSURE",
-        "company": "INDUSTRIAL ASPHALTS (CEYLON) PLC",
+        "id": 31882,
+        "createdDate": 1784199693000,
+        "dateOfAnnouncement": "16 Jul 2026",
+        "announcementId": 38057,
+        "announcementCategory": "DEALINGS BY DIRECTORS",
+        "company": "MERCANTILE INVESTMENTS AND FINANCE PLC",
         "type": null,
         "symbol": null,
         "recordDate": null,
@@ -55,16 +55,16 @@
         "paymentDate": null,
         "agmDate": null,
         "dateOfAgmInitial": null,
-        "logoUrl": "upload_logo/495_1645043761.jpeg",
-        "remarks": "Further to the announcement dated 08th July 2026: Proposed Voluntary Offer by Arcasia Investment & Trading (Pvt) Ltd and ATX Partners (Pvt) Ltd to acquire shares in Industrial Asphalts (Ceylon) PLC"
+        "logoUrl": "upload_logo/1064_1601462304.jpeg",
+        "remarks": null
       },
       {
-        "id": 31840,
-        "createdDate": 1783683537000,
-        "dateOfAnnouncement": "10 Jul 2026",
-        "announcementId": 38007,
-        "announcementCategory": "RESIGNATION OF DIRECTORS",
-        "company": "CITRUS LEISURE  PLC",
+        "id": 31880,
+        "createdDate": 1784171729000,
+        "dateOfAnnouncement": "16 Jul 2026",
+        "announcementId": 38055,
+        "announcementCategory": "TRADING HALTED",
+        "company": "AMBEON CAPITAL PLC ",
         "type": null,
         "symbol": null,
         "recordDate": null,
@@ -77,14 +77,14 @@
         "paymentDate": null,
         "agmDate": null,
         "dateOfAgmInitial": null,
-        "logoUrl": null,
+        "logoUrl": "upload_logo/1181_1601622394.jpeg",
         "remarks": null
       }
     ],
     "_truncated": {
       "list_key": "approvedAnnouncements",
       "kept": 3,
-      "original_len": 82
+      "original_len": 60
     }
   }
 }

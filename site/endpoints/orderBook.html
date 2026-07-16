@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compare · CSE API Docs (unofficial)</title>
+<title>orderBook · CSE API Docs (unofficial)</title>
 <style>
 :root {
   --bg: #0f1419;
@@ -72,20 +72,87 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
 </header>
 
 <nav>
-  <a href="./index.html">Home</a>
-  <a href="./endpoints/index.html">Endpoints</a>
-  <a href="./websocket.html">WebSocket</a>
-  <a href="./ethics.html">Ethics</a>
-  <a href="./examples.html">Examples</a>
-  <a href="./compare.html">vs GH0STH4CKER</a>
-  <a href="./probe.html">Last probe</a>
+  <a href="../index.html">Home</a>
+  <a href="../endpoints/index.html">Endpoints</a>
+  <a href="../websocket.html">WebSocket</a>
+  <a href="../ethics.html">Ethics</a>
+  <a href="../examples.html">Examples</a>
+  <a href="../compare.html">vs GH0STH4CKER</a>
+  <a href="../probe.html">Last probe</a>
 </nav>
 <main>
-<h1>Compared to GH0STH4CKER docs</h1>
-<p>We still credit that repo as an early public checklist that helped the community notice these endpoints exist.</p>
+
+<div class="card">
+  <h2><code>POST /orderBook</code></h2>
+  <p><span class="badge cat">prices</span>
+  <span class='badge ok'>probe ok</span>
+  </p>
+  <p>Public order-book totals + live bid/ask levels for one symbol.</p>
+  <p class="meta">Used by UI: Order book / market depth widget</p>
+  <p class="meta">Last probe status: 200 · expect [200]</p>
+</div>
+<div class="card">
+  <h3>curl</h3>
+  <pre>curl -sS -X POST &#x27;https://www.cse.lk/api/orderBook&#x27; \
+  -H &#x27;Content-Type: application/x-www-form-urlencoded&#x27; \
+  -H &#x27;Origin: https://www.cse.lk&#x27; -H &#x27;Referer: https://www.cse.lk/&#x27; \
+  -d &#x27;symbol={{symbol}}&#x27;</pre>
+</div>
+<div class="card">
+  <h3>Known failures</h3>
+  <ul><li>None recorded</li></ul>
+  <h3>Fields</h3>
+  <ul><li><code>reqOrderBookTotal.totalBids</code></li><li><code>reqOrderBookTotal.totalAsks</code></li><li><code>reqOrderBook[].price</code></li><li><code>reqOrderBook[].quantity</code></li><li><code>reqOrderBook[].buySell</code> — side flag, meaning not yet confirmed — only value 1 observed so far</li></ul>
+</div>
+<div class="card">
+  <h3>Sample</h3>
+  <pre>{
+  &quot;_probe&quot;: {
+    &quot;id&quot;: &quot;orderBook&quot;,
+    &quot;url&quot;: &quot;https://www.cse.lk/api/orderBook&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;status&quot;: 200,
+    &quot;verified_at&quot;: &quot;2026-07-16T16:34:33.860624+00:00&quot;,
+    &quot;fingerprint&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;keys&quot;: [
+        &quot;reqOrderBook&quot;,
+        &quot;reqOrderBookTotal&quot;
+      ]
+    }
+  },
+  &quot;response&quot;: {
+    &quot;reqOrderBookTotal&quot;: {
+      &quot;id&quot;: 46218574,
+      &quot;totalBids&quot;: 2188259,
+      &quot;totalAsks&quot;: 1370786
+    },
+    &quot;reqOrderBook&quot;: [
+      {
+        &quot;id&quot;: 46222410,
+        &quot;securityId&quot;: 297,
+        &quot;board&quot;: &quot;-1&quot;,
+        &quot;splits&quot;: 3,
+        &quot;buySell&quot;: 1,
+        &quot;priceLevel&quot;: 1,
+        &quot;yield&quot;: 1.0,
+        &quot;price&quot;: 20.0,
+        &quot;quantity&quot;: 2205.0
+      }
+    ],
+    &quot;_truncated&quot;: {
+      &quot;list_key&quot;: &quot;reqOrderBook&quot;,
+      &quot;kept&quot;: 1,
+      &quot;original_len&quot;: 1
+    }
+  }
+}
+</pre>
+</div>
+
 </main>
 <footer>
-  MIT-licensed harness · Not financial advice · <a href="./ethics.html">Ethics</a> ·
+  MIT-licensed harness · Not financial advice · <a href="../ethics.html">Ethics</a> ·
   Generated 2026-07-16 16:35 UTC
 </footer>
 </body>

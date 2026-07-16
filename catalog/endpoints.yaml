@@ -114,6 +114,25 @@ endpoints:
     expect_status: [200]
     truncate_list_key: reqDetailTrades
 
+  - id: orderBook
+    path: /orderBook
+    method: POST
+    content_type: form
+    body:
+      symbol: "{{symbol}}"
+    category: prices
+    summary: Public order-book totals + live bid/ask levels for one symbol.
+    used_by_ui: Order book / market depth widget
+    fields:
+      - path: reqOrderBookTotal.totalBids
+      - path: reqOrderBookTotal.totalAsks
+      - path: reqOrderBook[].price
+      - path: reqOrderBook[].quantity
+      - path: reqOrderBook[].buySell
+        note: "side flag, meaning not yet confirmed — only value 1 observed so far"
+    expect_status: [200]
+    truncate_list_key: reqOrderBook
+
   - id: todaySharePrice
     path: /todaySharePrice
     method: POST
@@ -310,6 +329,27 @@ endpoints:
     summary: Rich company page — directors, business summary, logo, article PDFs, contacts.
     used_by_ui: Company profile page
     expect_status: [200]
+
+  - id: financials
+    path: /financials
+    method: POST
+    content_type: form
+    body:
+      symbol: "{{symbol}}"
+    category: company
+    summary: >-
+      Per-symbol financial report archive — annual/quarterly/other report PDFs
+      plus a flat reqFinancial statement-line array (secId/elmId/data).
+    used_by_ui: Company financials tab
+    fields:
+      - path: infoAnnualData[].fileText
+      - path: infoQuarterlyData[].fileText
+      - path: infoOtherData[].fileText
+      - path: reqFinancial[].secId
+      - path: reqFinancial[].elmId
+      - path: reqFinancial[].data
+    expect_status: [200]
+    truncate_list_key: reqFinancial
 
   - id: corporateAnnouncementCategory
     path: /corporateAnnouncementCategory

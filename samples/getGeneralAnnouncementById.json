@@ -4,7 +4,7 @@
     "url": "https://www.cse.lk/api/getGeneralAnnouncementById",
     "method": "POST",
     "status": 200,
-    "verified_at": "2026-07-12T05:58:17.729325+00:00",
+    "verified_at": "2026-07-16T16:34:42.388509+00:00",
     "fingerprint": {
       "type": "object",
       "keys": []

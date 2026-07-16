@@ -1,0 +1,41 @@
+{
+  "_probe": {
+    "id": "orderBook",
+    "url": "https://www.cse.lk/api/orderBook",
+    "method": "POST",
+    "status": 200,
+    "verified_at": "2026-07-16T16:34:33.860624+00:00",
+    "fingerprint": {
+      "type": "object",
+      "keys": [
+        "reqOrderBook",
+        "reqOrderBookTotal"
+      ]
+    }
+  },
+  "response": {
+    "reqOrderBookTotal": {
+      "id": 46218574,
+      "totalBids": 2188259,
+      "totalAsks": 1370786
+    },
+    "reqOrderBook": [
+      {
+        "id": 46222410,
+        "securityId": 297,
+        "board": "-1",
+        "splits": 3,
+        "buySell": 1,
+        "priceLevel": 1,
+        "yield": 1.0,
+        "price": 20.0,
+        "quantity": 2205.0
+      }
+    ],
+    "_truncated": {
+      "list_key": "reqOrderBook",
+      "kept": 1,
+      "original_len": 1
+    }
+  }
+}
