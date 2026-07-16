@@ -82,6 +82,18 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
 </nav>
 <main>
 <h1>Changelog</h1>
+<h2>2026-07-16 — v0.3.0</h2>
+<ul>
+<li>Catalog grew from 35 to 37 endpoints:</li>
+</ul>
+<p>  - <code>POST /financials</code> — per-symbol annual/quarterly/other report archive</p>
+<p>    plus a <code>reqFinancial</code> statement-line array (<code>secId</code>/<code>elmId</code>/<code>data</code>).</p>
+<p>  - <code>POST /orderBook</code> — order-book totals + live bid/ask levels for one</p>
+<p>    symbol (already used by the Chime adapter, previously undocumented here).</p>
+<ul>
+<li>Re-probed the full catalog: 37/37 passed.</li>
+<li>README now lists every endpoint grouped by category.</li>
+</ul>
 <h2>2026-07-12 — v0.2.0</h2>
 <ul>
 <li>Extracted to a standalone repository:</li>
@@ -105,7 +117,7 @@ h3 { margin: 1.2rem 0 .4rem; font-size: 1rem; }
 </main>
 <footer>
   MIT-licensed harness · Not financial advice · <a href="./ethics.html">Ethics</a> ·
-  Generated 2026-07-16 16:35 UTC
+  Generated 2026-07-16 17:31 UTC
 </footer>
 </body>
 </html>

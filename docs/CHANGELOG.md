@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-07-16 — v0.3.0
+
+- Catalog grew from 35 to 37 endpoints:
+  - `POST /financials` — per-symbol annual/quarterly/other report archive
+    plus a `reqFinancial` statement-line array (`secId`/`elmId`/`data`).
+  - `POST /orderBook` — order-book totals + live bid/ask levels for one
+    symbol (already used by the Chime adapter, previously undocumented here).
+- Re-probed the full catalog: 37/37 passed.
+- README now lists every endpoint grouped by category.
+
 ## 2026-07-12 — v0.2.0
 
 - Extracted to a standalone repository:
